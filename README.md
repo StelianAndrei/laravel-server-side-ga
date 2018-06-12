@@ -15,7 +15,8 @@ First thing you need to do is require the package using composer.
 composer require stelianandrei/laravel-server-side-ga
 ```
 
-Then you need to add the service provider to your `config/app.php` file under the _Package Service Providers_ section:
+Then you need to add the service provider to your `config/app.php` file under
+the _Package Service Providers_ section:
 
 ```
   StelianAndrei\LaravelServerSideGA\AnalyticsServiceProvider::class,
@@ -27,13 +28,16 @@ Also add the Analytics facade to the _aliases_ array in the same file:
   'Analytics' => StelianAndrei\LaravelServerSideGA\AnalyticsFacade::class,
 ```
 
-Last thing you need to do is publish the configuration for this package. In order to do that all you need to do it run the following command:
+Last thing you need to do is publish the configuration for this package. In order
+to do that all you need to do it run the following command:
 
 ```
 php artisan vendor:publish --provider="StelianAndrei\LaravelServerSideGA\AnalyticsServiceProvider"
 ```
 
-That will create a configuation file for this package at `config/analytics.php` where you need to enter the property code you are using for tracking events and page views.
+That will create a configuation file for this package at `config/analytics.php`
+where you need to enter the property code you are using for tracking events and
+page views.
 
 ## Tracking page views
 
