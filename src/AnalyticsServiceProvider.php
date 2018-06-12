@@ -15,7 +15,7 @@ class AnalyticsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config = realpath(__DIR__ . '/config/analytics.php');
+        $config = realpath(__DIR__ . '/../config/analytics.php');
         $this->mergeConfigFrom($config, 'analytics');
         $this->publishes([
             $config => config_path('analytics.php'),
