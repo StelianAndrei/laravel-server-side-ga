@@ -37,7 +37,8 @@ php artisan vendor:publish --provider="StelianAndrei\LaravelServerSideGA\Analyti
 
 That will create a configuation file for this package at `config/analytics.php`
 where you need to enter the property code you are using for tracking events and
-page views.
+page views. You can either keep it here or define the `ANALYTICS_TRACKING_ID`
+property in your _.env_ file.
 
 ## Tracking page views
 
