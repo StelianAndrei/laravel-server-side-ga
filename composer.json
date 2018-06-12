@@ -1,7 +1,6 @@
 {
   "name": "stelianandrei/laravel-server-side-ga",
   "description": "A simple Laravel package that allows the sending of Google Analytics events from the server side",
-  "type": "library",
   "keywords": [
     "laravel",
     "server-side",
@@ -15,7 +14,14 @@
   },
   "autoload": {
     "psr-4": {
-      "StelianAndrei\\LaravelServerSideGA\\": "src/"
+      "StelianAndrei\\LaravelServerSideGA\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "StelianAndrei\\LaravelServerSideGA\\AnalyticsServiceProvider"
+      ]
     }
   },
   "authors": [
