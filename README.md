@@ -1,10 +1,11 @@
 # Laravel Server Side Google Analytics
 
-This is a simple package that allows tou to track Google Analytics pageviews and
-events from your Laravel application. It was created because we needed a simple
-way to track these when certain actions occured server-side or when specific actions
-were triggered fromm the frontend and we din't want to mingle our JavaScript
-logic with the analytics part.
+This is a simple package that allows you to track Google Analytics page views and
+events from your Laravel application.
+
+It was created because I needed a simple way to track these when certain actions
+occured server-side or when specific actions were triggered from the frontend
+and I din't want to mingle the JavaScript logic with the tracking part.
 
 ## Installation
 
