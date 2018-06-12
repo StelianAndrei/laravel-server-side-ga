@@ -9,7 +9,27 @@ and I din't want to mingle the JavaScript logic with the tracking part.
 
 ## Installation
 
-_TODO_
+First thing you need to do is require the package using composer.
+
+```
+composer require stelianandrei/laravel-server-side-ga
+```
+
+Then you need to add the service provider to your `config/app.php` file:
+
+```
+  /*
+   * Package Service Providers...
+   */
+
+  StelianAndrei\LaravelServerSideGA\AnalyticsServiceProvider::class,
+```
+
+Also add the Analytics facade to the **aliases** array in the same file:
+
+```
+  'Analytics' => StelianAndrei\LaravelServerSideGA\AnalyticsFacade::class,
+```
 
 ## Tracking page views
 
